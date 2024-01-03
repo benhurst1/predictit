@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, date
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 from airflow.models import Variable
 import logging
 
@@ -23,7 +23,7 @@ dag = DAG(
     default_args=default_args,
     description="Pull predictit data and store in s3 bucket",
     schedule_interval="0 0 * * *",
-    start_date=datetime(2024, 1, 4),
+    start_date=datetime(2024, 1, 3),
     catchup=False,
 )
 
