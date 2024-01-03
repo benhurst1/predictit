@@ -1,0 +1,7 @@
+predictit_venv
+api_secrets.py
+__pycache__
+docker-compose.yaml
+plugins
+logs
+config
